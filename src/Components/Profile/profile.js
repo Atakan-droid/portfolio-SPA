@@ -23,7 +23,7 @@ import {faLinkedin,faGithub,faBehance} from '@fortawesome/free-brands-svg-icons'
       <div className="main divHover">
         <h2>{locale.aboutMe}</h2>
         <div  className="topDivide"/>
-        <h5 style={{padding:20,fontSize:20}}>{locale.description}</h5>
+        <h5 style={{fontSize:20,padding:20}}>{locale.description}</h5>
         <br/>
         <div className="bottomDivide"/>
       </div>

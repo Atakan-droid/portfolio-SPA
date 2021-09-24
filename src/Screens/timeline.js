@@ -18,10 +18,13 @@ function Timeline(props){
         <VerticalTimeline>
         {
              props.locale.map((element,i)=>{
-              let isWorkIcon=element.icon==="work"
+              let isWorkIcon=element.icon==="work";
               let showButton=element.buttonText!==undefined 
               && element.buttonText!==null 
               && element.buttonText !=="";
+              let publishShowButton=element.publishButtonText!==undefined
+              && element.publishButtonText!==null
+              && element.publishButtonText!=="";
               return (
                 <VerticalTimelineElement
                 key={i}
@@ -39,7 +42,8 @@ function Timeline(props){
                   <p id="description">{element.description}</p>
                   </div>
                   </div>
-                  {showButton && (<a className={`button1 ${isWorkIcon?"workButton":"schoolButton"}`} href="/">{element.buttonText}</a>)}
+                  <div style={{display:'flex',flexDirection:"row"}}>{showButton && (<a className={`button1 ${isWorkIcon?"workButton":"schoolButton"}`} href={element.buttonLink}>{element.buttonText}</a>)}
+                  {publishShowButton && (<a className={`button1 ${isWorkIcon?"workButton":"schoolButton"}`} href={element.publishButtonLink}>{element.publishButtonText}</a>)}</div>
                 </VerticalTimelineElement>
               )
             })

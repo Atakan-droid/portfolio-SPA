@@ -68,6 +68,10 @@ h3{
     color:${props=>props.theme.date};
 }
 
+.flagButton{
+  width:5px;
+  height:5px;
+}
 
 #description{
     margin: 1.5em 0 2em 0;
@@ -130,8 +134,8 @@ h3{
 
 .row{
     margin:10px;
-    margin-left: 6em;
-    margin-right: 6em;
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
     text-align: center;
     font-size: 20px;
@@ -201,8 +205,8 @@ h3{
   //Tech Section CSS
 
   .techSection{
-    margin-left:5em;
-    margin-right:5em;
+    margin-left:5%;
+    margin-right:5%;
     
   }
   .techBoxTitle{
@@ -210,7 +214,7 @@ h3{
     
   }
   .techBox{
-    text-align:center;
+    
   }
   .techBox>h4{
     font-size:30px;
@@ -220,7 +224,7 @@ h3{
   .tech-section{
     display: flex;
     text-align: center;
-    margin: 3em;
+    margin: 1em;
   }
   .tech-section>div{
     border-radius: 10px;
@@ -245,7 +249,7 @@ h3{
   .scroll-to-top{
     position: fixed;
     bottom:1%;
-    left: 95%;
+    margin-left:90%;
     width: 40px;
     height: 40px;
     display: flex;

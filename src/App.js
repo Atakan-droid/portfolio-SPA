@@ -1,9 +1,11 @@
 import React,{useState} from 'react';
 import "./App.css";
 import "./Utilities/Themes/timelineTheme"
-import ScrollToTop from './ScrollToTop';
+import ScrollToTop from './Utilities/ScrollToTop/ScrollToTop';
 import {ThemeProvider} from 'styled-components';
 import {lightTheme,darkTheme,GlobalStyles} from './Utilities/Themes/timelineTheme.js';
+import turkeyIcon from './Utilities/Img/turkey.png';
+import enIcon from './Utilities/Img/united-kingdom.png';
 import {CgSun} from 'react-icons/cg';
 import {HiMoon} from 'react-icons/hi';
 import Profile from './Components/Profile/profile';
@@ -30,9 +32,11 @@ function App() {
   return (
     <ThemeProvider theme={theme==="light"? lightTheme:darkTheme}>
        <GlobalStyles/>
+       <ScrollToTop/>
       <div className="options">
       <a onClick={()=>themeToggler()}>{theme==="light"? <button1><CgSun/></button1>:<button1><HiMoon/></button1>}</a>
-      <a onClick={()=>localesToggler()}>{locales===localEN? <button1>EN</button1>:<button1>TR</button1>}</a>
+      <a onClick={()=>localesToggler()}>{locales===localEN? 
+      <img src={enIcon} />:<img src={turkeyIcon}/>}</a>
       </div>
       <div>
       <Profile locale={locales.profile} />
@@ -40,7 +44,6 @@ function App() {
       <div className="timeline">
         <Timeline theme={theme} locale={locales.timeline} />
       </div>
-      <ScrollToTop/>
     </div>
     </ThemeProvider>
   );

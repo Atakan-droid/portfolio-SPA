@@ -11,7 +11,7 @@ export class TechBox extends Component {
                 <h5><FontAwesomeIcon style={{fontSize:50}} icon={this.props.icon}/></h5>
                 <h4>{this.props.title}</h4>
                 <div className="topDivide"/>
-                <p>{this.props.description}</p>
+                <p style={{fontSize:20}}>{this.props.description}</p>
               </div>
         )
     }
