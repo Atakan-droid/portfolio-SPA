@@ -36,7 +36,7 @@ function App() {
       </div>
       <div>
       <Profile locale={locales.profile} />
-      <TechSection locale={locales}/>
+      <TechSection locale={locales.technology}/>
       <div className="timeline">
         <Timeline theme={theme} locale={locales.timeline} />
       </div>

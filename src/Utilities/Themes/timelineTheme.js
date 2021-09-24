@@ -129,7 +129,7 @@ h3{
 
 
 .row{
-    margin: 25px;
+    margin:10px;
     margin-left: 6em;
     margin-right: 6em;
     display: flex;
@@ -200,8 +200,13 @@ h3{
 
   //Tech Section CSS
 
+  .techSection{
+    margin-left:5em;
+    margin-right:5em;
+    
+  }
   .techBoxTitle{
-    text-align:center; 
+    text-align:center;
     
   }
   .techBox{

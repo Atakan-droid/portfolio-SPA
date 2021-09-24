@@ -28,6 +28,7 @@ import {faLinkedin,faGithub,faBehance} from '@fortawesome/free-brands-svg-icons'
         <div className="bottomDivide"/>
       </div>
     </div>
+    <div style={{marginTop:50}} className="bottomDivide"/>
       </div>
     )
  }
