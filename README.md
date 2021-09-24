@@ -1,9 +1,15 @@
+# This Website is My Portfolio Site
 
-# Getting Started with Create React App
+* I made this site to introduce myself and show what I do/will do
+
+
+## How do you run
+
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
