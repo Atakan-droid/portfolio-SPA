@@ -36,7 +36,7 @@ function App() {
       <div className="options">
       <a onClick={()=>themeToggler()}>{theme==="light"? <button1><CgSun/></button1>:<button1><HiMoon/></button1>}</a>
       <a onClick={()=>localesToggler()}>{locales===localEN? 
-      <img src={enIcon} />:<img src={turkeyIcon}/>}</a>
+      <img alt="enIcon"src={enIcon} />:<img alt="turkeyIcon" src={turkeyIcon}/>}</a>
       </div>
       <div>
       <Profile locale={locales.profile} />

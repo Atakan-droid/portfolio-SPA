@@ -2,21 +2,23 @@ body{
 
 }
 .options{
+    margin-top:0.5%;
+    margin-bottom: 0.5%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
-    padding-right: 30px;
-    padding-top: 10px;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 1%;
     font-size: 20px;
     
 }
 .options>a{
-    margin-left: 40px;
+    margin-left: 30px;
 }
 .options>a>button{
     background: transparent;
     border-style: double;
-    padding: 0.5em 1em 0.5em;
     border-radius: 5px;
 }
 

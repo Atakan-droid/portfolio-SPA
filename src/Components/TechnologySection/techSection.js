@@ -6,8 +6,6 @@ import { faDesktop } from '@fortawesome/free-solid-svg-icons';
 
 
 function chosenIcon(icon) {
-     {
-         
                 if(icon==="react"){
                     return faReact;
                 }else if(icon==="pc"){
@@ -18,7 +16,6 @@ function chosenIcon(icon) {
                    return faDesktop;
                 }
             }
-}
  function TechSection(props)  {
 
         return (
