@@ -17,7 +17,7 @@ import localEN from './Utilities/Localization/locales/localEN';
 
 function App() {
 
-  const [theme,setTheme]=useState("light");
+  const [theme,setTheme]=useState("dark");
   const [locales,setLocales]=useState(localTR);
 
   const themeToggler=()=>{
@@ -34,7 +34,7 @@ function App() {
        <GlobalStyles/>
        <ScrollToTop/>
       <div className="options">
-      <a onClick={()=>themeToggler()}>{theme==="light"? <button1><CgSun/></button1>:<button1><HiMoon/></button1>}</a>
+      <a onClick={()=>themeToggler()}>{theme==="light"? <div><CgSun/></div>:<div><HiMoon/></div>}</a>
       <a onClick={()=>localesToggler()}>{locales===localEN? 
       <img alt="enIcon"src={enIcon} />:<img alt="turkeyIcon" src={turkeyIcon}/>}</a>
       </div>

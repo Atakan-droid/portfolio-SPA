@@ -1,19 +1,22 @@
 import { createGlobalStyle } from "styled-components"
+import darkBG from '../Img/darkBG.png';
+import lightBG from '../Img/lightBG.png';
+
 export const lightTheme={
-    background:'#E8B7B7',
+    background:lightBG,
     color:'#353535',
     workButton: '#F01A1A',
     workButtonHover:'#F56767',
     schoolButton: '#f9c74f',
     schoolButtonHover:'#f3bc3c',
-    timelineStyleBg:'#DC8686',
+    timelineStyleBg:'#d9d9d9',
     timelineStyleColor:'#353535',
     date:'#00000D',
     
 }
 
 export const darkTheme={
-    background:'#17172f',
+    background:darkBG,
     color:'#E1D9D1',
     workButton: '#2C2C2B',
     workButtonHover:'#F01A1A',
@@ -25,7 +28,7 @@ export const darkTheme={
 }
 export const GlobalStyles=createGlobalStyle`
 body {
-    background: ${props=>props.theme.background};
+    background-image:url(${props=>props.theme.background});
     color:${props=>props.theme.color};
     font-family: "Bookman",sans-serif;
     font-size: 16px;
@@ -139,7 +142,6 @@ h3{
     display: flex;
     text-align: center;
     font-size: 20px;
-    background:${props=>props.theme.timelineStyleBg};
     color:${props=>props.theme.timelineStyleColor};
     
 }
@@ -147,7 +149,6 @@ h3{
     flex: 30%;
     padding: 20px;
     text-align: center;
-    background:${props=>props.theme.background};
   }
 
   .main {
@@ -155,6 +156,7 @@ h3{
     padding: 20px;
     box-shadow: 
       0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15);
+    background:${props=>props.theme.timelineStyleBg};
     border-radius: 10px;
   }
 .social-media{
@@ -165,6 +167,11 @@ h3{
   padding: 10px;
   margin:0 1rem;
 }
+.main>a{
+  color:${props=>props.theme.color};
+  text-decoration:none;
+
+}
 
 .topDivide{
  
@@ -172,6 +179,7 @@ h3{
     height: 1px;
     margin:auto;
     margin-top:4%;
+    margin-bottom:2%;
     background: #434343;
     border-bottom: 1px solid black;
 

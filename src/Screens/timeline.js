@@ -13,7 +13,7 @@ function Timeline(props){
   let WorkIconStyles={background:"#F01A1A"};
   let SchoolIconStyles={background:"#f9c74f"};
   let DarkTimelineStyles={background:'#171720',color:'#E1D9D1'};
-  let LightTimelineStyles={background:'#DC8686',color:'#353535'};
+  let LightTimelineStyles={background:'#d9d9d9',color:'#353535'};
     return(
         <VerticalTimeline>
         {
