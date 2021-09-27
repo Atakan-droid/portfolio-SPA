@@ -1,3 +1,5 @@
+import Resume from '../../../Img/Resume.pdf'
+
 let profileElementEn={
     name:"Atakan GÖÇER",
     job:"Computer Engineer",
@@ -7,7 +9,9 @@ let profileElementEn={
     aboutMe:"About Me",
     description:"I am a person who has graduated from Sakarya University Computer Engineering Department and is interested in mobile and web technologies. I aim to learn and teach new things together with developers interested in these technologies. I share the applications that I have developed and will develop for suggestions and advice as open source. I am doing my best to reach my goal.",
     sideDescription:"SOLID - Layered Architecture - OOP- AOP",
-    downloadText:"Click to download resume..."
+    downloadText:"Click to download resume...",
+    downloadFileName:"Resume.pdf",
+    downloadFile:Resume
 }
 
 export default profileElementEn;

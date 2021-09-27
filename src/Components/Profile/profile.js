@@ -2,7 +2,6 @@ import React from 'react';
 import logo from '../../Utilities/Img/Logo_AG.png';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faLinkedin,faGithub,faBehance} from '@fortawesome/free-brands-svg-icons';
-import Resume from '../../Utilities/Img/Resume.pdf';
 
 
  function Profile({locale}){
@@ -27,7 +26,7 @@ import Resume from '../../Utilities/Img/Resume.pdf';
         <h5 style={{fontSize:20,padding:20,marginBottom:120}}>{locale.description}</h5>
         <br/><h5>{locale.sideDescription}</h5>
         <div  className="topDivide"/>
-        <a className="downloadLink" href={Resume} type="button" download="Resume.pdf">{locale.downloadText}</a>
+        <a className="downloadLink" href={locale.downloadFile} type="button" download={locale.downloadFileName}>{locale.downloadText}</a>
       </div>
     </div>
     <div style={{marginTop:50}} className="bottomDivide"/>

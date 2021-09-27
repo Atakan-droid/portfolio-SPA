@@ -18,7 +18,7 @@ import localEN from './Utilities/Localization/locales/localEN';
 function App() {
 
   const [theme,setTheme]=useState("dark");
-  const [locales,setLocales]=useState(localTR);
+  const [locales,setLocales]=useState(localEN);
 
   const themeToggler=()=>{
     theme==="light" ? setTheme("dark"):setTheme("light")
@@ -32,7 +32,7 @@ function App() {
   return (
     <ThemeProvider theme={theme==="light"? lightTheme:darkTheme}>
        <GlobalStyles/>
-       <ScrollToTop/>
+       
       <div className="options">
       <a onClick={()=>themeToggler()}>{theme==="light"? <div><CgSun/></div>:<div><HiMoon/></div>}</a>
       <a onClick={()=>localesToggler()}>{locales===localEN? 
@@ -44,6 +44,7 @@ function App() {
       <div className="timeline">
         <Timeline theme={theme} locale={locales.timeline} />
       </div>
+      <ScrollToTop/>
     </div>
     </ThemeProvider>
   );

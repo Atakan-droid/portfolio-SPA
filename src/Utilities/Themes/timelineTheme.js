@@ -257,7 +257,7 @@ h3{
   .scroll-to-top{
     position: fixed;
     bottom:1%;
-    margin-left:90%;
+    left:85%;
     width: 40px;
     height: 40px;
     display: flex;
