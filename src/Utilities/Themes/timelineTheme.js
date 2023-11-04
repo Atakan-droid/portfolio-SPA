@@ -1,35 +1,35 @@
 import { createGlobalStyle } from "styled-components"
-import darkBG from '../Img/darkBG.png';
-import lightBG from '../Img/lightBG.png';
+import darkBG from '../Img/darkBG.webp';
+import lightBG from '../Img/lightBG.webp';
 
-export const lightTheme={
-    background:lightBG,
-    color:'#353535',
-    workButton: '#F01A1A',
-    workButtonHover:'#F56767',
-    schoolButton: '#f9c74f',
-    schoolButtonHover:'#f3bc3c',
-    timelineStyleBg:'#d9d9d9',
-    timelineStyleColor:'#353535',
-    date:'#00000D',
-    
+export const lightTheme = {
+  background: lightBG,
+  color: '#353535',
+  workButton: '#F01A1A',
+  workButtonHover: '#F56767',
+  schoolButton: '#f9c74f',
+  schoolButtonHover: '#f3bc3c',
+  timelineStyleBg: '#d9d9d9',
+  timelineStyleColor: '#353535',
+  date: '#00000D',
+
 }
 
-export const darkTheme={
-    background:darkBG,
-    color:'#E1D9D1',
-    workButton: '#2C2C2B',
-    workButtonHover:'#F01A1A',
-    schoolButton: '#2C2C2B',
-    schoolButtonHover:'#f3bc3c',
-    timelineStyleBg:'#171720',
-    timelineStyleColor:"#E1D9D1",
-    date:'#FDFBF9',
+export const darkTheme = {
+  background: darkBG,
+  color: '#E1D9D1',
+  workButton: '#2C2C2B',
+  workButtonHover: '#F01A1A',
+  schoolButton: '#2C2C2B',
+  schoolButtonHover: '#f3bc3c',
+  timelineStyleBg: '#171720',
+  timelineStyleColor: "#E1D9D1",
+  date: '#FDFBF9',
 }
-export const GlobalStyles=createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
 body {
-    background-image:url(${props=>props.theme.background});
-    color:${props=>props.theme.color};
+    background-image:url(${props => props.theme.background});
+    color:${props => props.theme.color};
     font-family: "Bookman",sans-serif;
     font-size: 16px;
 }
@@ -64,11 +64,11 @@ h3{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px ${props=>props.theme.background}, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);}
+    box-shadow: 0 0 0 4px ${props => props.theme.background}, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);}
 
 
 .date{
-    color:${props=>props.theme.date};
+    color:${props => props.theme.date};
 }
 
 .flagButton{
@@ -87,8 +87,8 @@ h3{
     position: absolute;
     top: 0;
     right: 0;
-    color:${props=>props.theme.color};
-    background-color: ${props=>props.theme.background};
+    color:${props => props.theme.color};
+    background-color: ${props => props.theme.background};
 }
 .button1{
     text-decoration: none;
@@ -98,25 +98,25 @@ h3{
     border-radius: 10px;
 }
 .workButton{
-    background-color: ${props=>props.theme.workButton};
+    background-color: ${props => props.theme.workButton};
     margin: 5px;
     border-style: solid;
     border-width: 1px;
 }
 .workButton:hover{
-    background-color:${props=>props.theme.workButtonHover} ;
+    background-color:${props => props.theme.workButtonHover} ;
     margin: 5px;
     border-style: solid;
     border-width: 1px;
 }
 .schoolButton{
-    background-color: ${props=>props.theme.schoolButton};
+    background-color: ${props => props.theme.schoolButton};
     margin: 5px;
     border-style: solid;
     border-width: 1px;
 }
 .schoolButton:hover{
-    background-color: ${props=>props.theme.schoolButtonHover};
+    background-color: ${props => props.theme.schoolButtonHover};
     margin: 5px;
     border-style: solid;
     border-width: 1px;
@@ -126,7 +126,7 @@ h3{
     .vertical-timeline-element-date{
         display: block !important;
         float: none !important;
-        color: ${props=>props.theme.date};
+        color: ${props => props.theme.date};
         margin-top: 1.5em;
     }
 }
@@ -142,7 +142,7 @@ h3{
     display: flex;
     text-align: center;
     font-size: 20px;
-    color:${props=>props.theme.timelineStyleColor};
+    color:${props => props.theme.timelineStyleColor};
     
 }
 .side {
@@ -156,7 +156,7 @@ h3{
     padding: 20px;
     box-shadow: 
       0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15);
-    background:${props=>props.theme.timelineStyleBg};
+    background:${props => props.theme.timelineStyleBg};
     border-radius: 10px;
   }
 .social-media{
@@ -168,7 +168,7 @@ h3{
   margin:0 1rem;
 }
 .main>a{
-  color:${props=>props.theme.color};
+  color:${props => props.theme.color};
   text-decoration:none;
 
 }
@@ -210,7 +210,16 @@ h3{
 
   }
 
+
   //Tech Section CSS
+
+  .techSectionContainer{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
 
   .techSection{
     margin-left:5%;
@@ -219,20 +228,22 @@ h3{
   }
   .techBoxTitle{
     text-align:center;
-    
   }
   .techBox{
-    
+    text-align:center;
+    justify-content: center;
+    max-height: 300px;
+    width: 300px;
   }
   .techBox>h4{
     font-size:30px;
-    margin-top:-30px;
+    margin-top:-20px;
   }
   
   .tech-section{
     display: flex;
     text-align: center;
-    margin: 1em;
+    margin: 1rem;
   }
   .tech-section>div{
     border-radius: 10px;
@@ -242,8 +253,8 @@ h3{
     text-align: center;
     line-height: 75px;
     font-size: 24px;
-    background:${props=>props.theme.timelineStyleBg};
-    color:${props=>props.theme.timelineStyleColor};
+    background:${props => props.theme.timelineStyleBg};
+    color:${props => props.theme.timelineStyleColor};
   }
 
   @media screen and (max-width:1000px) {
@@ -263,9 +274,9 @@ h3{
     display: flex;
     justify-content: center;
     border-radius: 100%;
-    background: ${props=>props.theme.timelineStyleBg};
+    background: ${props => props.theme.timelineStyleBg};
     z-index: 1;
-    color: ${props=>props.theme.timelineStyleColor};
+    color: ${props => props.theme.timelineStyleColor};
 }
 .scroll-to-top>i{
     margin-top: 10px;

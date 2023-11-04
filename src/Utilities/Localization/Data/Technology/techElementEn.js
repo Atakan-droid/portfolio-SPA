@@ -1,39 +1,39 @@
-let techElementEn=[
+let techElementEn = [
     {
-        id:1,
-        title:"React JS/Native",
-        technical:"tech",
+        id: 1,
+        title: "Mobile",
+        technical: "tech",
         description:
-        "Web Page - Mobil Application",
-        icon:"react",
-        locale:"en"
+            "React-Native / Flutter",
+        icon: "react",
+        locale: "en"
     },
     {
-        id:2,
-        title:"ASP.NET Core 3/5",
-        technical:"tech",
+        id: 2,
+        title: "ASP.NET/Core",
+        technical: "tech",
         description:
-        "RestAPI / MVC",
-        icon:"pc",
-        locale:"en"
+            "SOAP-Rest / MVC",
+        icon: "pc",
+        locale: "en"
     },
     {
-        id:3,
-        title:"Angular",
-        technical:"tech",
+        id: 3,
+        title: "Vue Js",
+        technical: "tech",
         description:
-        "Single Page Application",
-        icon:"angular",
-        locale:"en"
+            "Single Page Application",
+        icon: "vue",
+        locale: "en"
     },
     {
-        id:4,
-        title:"MSSQL ",
-        technical:"tech",
+        id: 4,
+        title: "SQL - NoSQL",
+        technical: "tech",
         description:
-        "SQL - Entity Framework",
-        icon:"",
-        locale:"en"
+            "MSSQL - MongoDB - Firebase - SQLite",
+        icon: "",
+        locale: "en"
     },
 ]
 
