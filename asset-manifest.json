@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio-SPA/static/css/main.35ede801.css",
+    "main.js": "/portfolio-SPA/static/js/main.a7f46a3d.js",
+    "static/js/787.a1fbcab3.chunk.js": "/portfolio-SPA/static/js/787.a1fbcab3.chunk.js",
+    "static/media/OzGecmis.pdf": "/portfolio-SPA/static/media/OzGecmis.691def12f589965e38ae.pdf",
+    "static/media/Resume.pdf": "/portfolio-SPA/static/media/Resume.6e63ab9ac7197ad1a9b1.pdf",
+    "static/media/darkBG.webp": "/portfolio-SPA/static/media/darkBG.bcbd805b2c3cb2a07db0.webp",
+    "static/media/lightBG.webp": "/portfolio-SPA/static/media/lightBG.c45e7c9d3aee8e0254a6.webp",
+    "static/media/Logo_AG.webp": "/portfolio-SPA/static/media/Logo_AG.78df12012a869b1e80b1.webp",
+    "static/media/work.svg": "/portfolio-SPA/static/media/work.8ebebaf10f25ed846612b01f43c83b5e.svg",
+    "static/media/school.svg": "/portfolio-SPA/static/media/school.eddc55a08be12a339d38ca00267f741b.svg",
+    "index.html": "/portfolio-SPA/index.html",
+    "static/media/united-kingdom.webp": "/portfolio-SPA/static/media/united-kingdom.52eac4d610e42a792e75.webp",
+    "static/media/turkey.webp": "/portfolio-SPA/static/media/turkey.8e6f668a162423042581.webp",
+    "main.35ede801.css.map": "/portfolio-SPA/static/css/main.35ede801.css.map",
+    "main.a7f46a3d.js.map": "/portfolio-SPA/static/js/main.a7f46a3d.js.map",
+    "787.a1fbcab3.chunk.js.map": "/portfolio-SPA/static/js/787.a1fbcab3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35ede801.css",
+    "static/js/main.a7f46a3d.js"
+  ]
+}
